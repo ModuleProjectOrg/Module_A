@@ -7,6 +7,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 # use_frameworks!
 
 target 'Module_A' do
-   pod 'HandyFrame'
+   # pod 'HandyFrame'
    pod 'Module_BCategory'
 end
