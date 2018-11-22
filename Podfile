@@ -8,5 +8,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Module_A' do
    pod 'HandyFrame'
-   pod "Module_BCategory", :path => "../Module_BCategory"
+#   pod "Module_BCategory", :path => "../Module_BCategory"
 end
