@@ -8,7 +8,7 @@
 
 #import "Module_AViewController.h"
 //#import "Module_BViewController.h"
-//#import <Module_BCategory/CTMediator+Module_B.h>
+#import <Module_BCategory/CTMediator+Module_B.h>
 #import <HandyFrame/UIView+LayoutMethods.h>
 
 @interface Module_AViewController ()
@@ -61,7 +61,7 @@
 
 - (void)pushBViewController {
 //    Module_BViewController *viewController = [[Module_BViewController alloc] initWithContentText:@"Hello World!"];
-    UIViewController *viewController; // = [[CTMediator sharedInstance] Module_BViewControllerWithContentText:@"Hello World!"];
+    UIViewController *viewController = [[CTMediator sharedInstance] Module_BViewControllerWithContentText:@"Hello World!"];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
