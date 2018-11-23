@@ -137,5 +137,6 @@ Pod::Spec.new do |s|
   # s.dependency "BLAPIManagers"
   # s.dependency "BLMediator"
   s.dependency "HandyFrame"
+  s.dependency "Module_BCategory"
 
 end
