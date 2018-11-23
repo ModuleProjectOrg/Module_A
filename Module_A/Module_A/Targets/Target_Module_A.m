@@ -11,7 +11,11 @@
 
 @implementation Target_Module_A
 
-- (UIViewController *)Action_viewController {
+- (UIViewController *)Action_viewController:(NSDictionary *)params {
+    void(^callBack)(NSString *) = params[@"callBack"];
+    if (callBack) {
+        callBack(@"Success");
+    }
     Module_AViewController *viewController = [[Module_AViewController alloc] init];
     return viewController;
 }

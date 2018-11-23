@@ -10,6 +10,6 @@
 
 @interface Target_Module_A : NSObject
 
-- (UIViewController *)Action_viewController;
+- (UIViewController *)Action_viewController:(NSDictionary *)params;
 
 @end
